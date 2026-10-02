@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/*
+LISTA DE CORES DA IMAGEM INICIAL DO JOGO:
+#59551E -> cor do cabeçalho
+#F2DEA2 -> cor do fundo e letras cabeçalho
+#594834 -> letras texto 
+#A0BED9 -> detalhe azul
+#731F35 -> detalhe vinho
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2DEA2;
+    margin: 0;
+    padding: 0;
+    color: #594834;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #59551E;
+    color: #F2DEA2;
+    padding: 15px 60px;
+}
+
+header a{
+    color: #F2DEA2;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+
+.principal {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #A0BED9;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card abbr, .card a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.dangoBotao {
+    cursor: pointer;
+    background-color: #59551E;
+    color: #F2DEA2;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.dangoBotao:hover {
+    background-color: #731F35;
+}
+
+.newpage {
+    cursor: pointer;
+    background-color: #59551E;
+    color: #F2DEA2;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.newpage:hover {
+    background-color: #A0BED9;
+}
+
+
+.detalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #4456633d;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.detalheTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 900px;        
+    width: 90%;              
+    margin: 40px auto;       
+
+    padding: 30px;
+    background-color: #4456633d;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
